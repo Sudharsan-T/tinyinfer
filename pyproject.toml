@@ -1,0 +1,24 @@
+[project]
+name = "tinyinfer"
+version = "0.1.0"
+description = "A tiny GPT-2 inference engine in pure NumPy."
+readme = "README.md"
+requires-python = ">=3.13"
+maintainers = [{ name = "Sudharsan Thirumalai" }]
+dependencies = [
+    "huggingface-hub>=2.4.0",
+    "numpy>=2.5.4",
+    "pytest>=9.2.0",
+    "safetensors>=0.8.0",
+]
+
+[project.scripts]
+tinyinfer = "tinyinfer:main"
+
+[project.urls]
+Homepage = "https://github.com/Sudharsan-T/tinyinfer"
+Repository = "https://github.com/Sudharsan-T/tinyinfer"
+
+[build-system]
+requires = ["uv_build>=0.12.14,<0.13.0"]
+build-backend = "uv_build"
